@@ -39,7 +39,6 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^7.12.1",
     "rxjs": "^6.6.3"
   }
 }

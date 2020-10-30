@@ -4,7 +4,7 @@
     "es6": true,
     "node": true
   },
-  "extends": "eslint:recommended",
+  "extends": ["eslint:recommended", "react-app"],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -17,6 +17,7 @@
       "error",
       "tab"
     ],
+    "import/no-anonymous-default-export": "off",
     "no-trailing-spaces": "error",
     "comma-dangle": [
       "error",
@@ -42,7 +43,6 @@
         "after": true
       }
     ],
-    "no-unused-vars": "off",
     "linebreak-style": [
       "error",
       "unix"
