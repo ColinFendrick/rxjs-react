@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
 import { Container } from 'reactstrap';
 
-import { Home, PlaceholderTable, CharacterTable, FilmTable } from './components';
+import { Home, CharacterTable, FilmTable } from './components';
 
 export default () => {
 	return (
@@ -13,12 +13,6 @@ export default () => {
 						<li className='nav-item'>
 							<Link to={'/'} className='nav-link'>
 								Home
-							</Link>
-						</li>
-
-						<li className='nav-item'>
-							<Link to={'/placeholder'} className='nav-link'>
-								Default Table
 							</Link>
 						</li>
 
@@ -40,7 +34,6 @@ export default () => {
 			<Container fluid>
 				<Switch>
 					<Route exact path='/' component={Home} />
-					<Route path='/placeholder' component={PlaceholderTable} />
 					<Route path='/characters' component={CharacterTable} />
 					<Route path='/films' component={FilmTable} />
 				</Switch>
